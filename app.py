@@ -1,3 +1,12 @@
+from flask import Flask, render_template, request
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
+nltk.download('wordnet')
+
+from nltk.corpus import stopwords
+# rest of your imports...
+
 from flask import Flask, request, render_template
 import joblib
 import re, string
